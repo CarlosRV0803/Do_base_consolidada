@@ -84,8 +84,6 @@ replace plaza_doc_nec = round(cant_total2019/20) if $cond_pri_p_rural & $filtro_
 replace plaza_doc_nec = round(cant_total2019/25) if $cond_pri_p_urbano & $filtro_ebr
 replace plaza_doc_nec = round(cant_total2019/25) if $cond_pri_c_rural & $filtro_ebr
 replace plaza_doc_nec = round(cant_total2019/30) if $cond_pri_c_urbano & $filtro_ebr
-replace plaza_doc_nec = round(cant_total2019/25) if $cond_sec_c_rural & $filtro_ebr
-replace plaza_doc_nec = round(cant_total2019/30) if $cond_sec_c_urbano & $filtro_ebr
 gen plaza_e = plaza_doc - plaza_doc_nec	
 
 
